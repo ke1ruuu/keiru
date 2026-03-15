@@ -4,6 +4,8 @@ import "./globals.css";
 import { DockNav } from "@/components/layout/dock-nav";
 import { Footer } from "@/components/layout/footer";
 
+import { Analytics } from "@vercel/analytics/next";
+
 const syne = Syne({
   subsets: ["latin"],
   variable: "--font-syne",
@@ -42,6 +44,7 @@ export default function RootLayout({
           <Footer />
         </div>
       </body>
+      <Analytics />
     </html>
   );
 }
